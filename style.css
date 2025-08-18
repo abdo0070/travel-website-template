@@ -26,7 +26,75 @@ main{
 .hero .content{
     width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.hero .content h2{
+  color: #181E4B;
+  font-size: 64px;
+  letter-spacing: -2px;
+  word-spacing: -2px;
+  line-height: 60px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.hero .content h1{
+    color: #DF6951;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.hero .content p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #181E4B;
+}
+
+.hero .content .btn{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  gap: 40px;
+}
+.hero .content .btn button{
+  padding: 16px 8px;
+  background-color: #F1A501;
+  height: 60px;
+  width: 160px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffff;
+  border: none;
+}
+.hero .content .btn .play{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hero .content .btn .play i{
+  padding: 10px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #DF6951;
+  color: #ffff;
+}
+.hero .content .btn .play span{
+  padding: 10px;
+  border-radius: 100%;
+  text-align: center;
+  color: #686D77;
+  font-size: 15px;
+  display: inline;
+}
+
+.plane{
+ position: absolute; 
+ top: 40px;
+ left: 55%;
 }
 /* Booking section css */
 .Booking p,.Booking h2,.Booking h3{
@@ -37,6 +105,8 @@ main{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
 }
 
 .steps{

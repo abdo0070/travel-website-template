@@ -104,9 +104,9 @@ main {
 }
 .Booking {
   margin-top: 100px;
+  width:100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .steps {
@@ -127,9 +127,9 @@ main {
   }
   p {
     color: #5e6282;
+    padding-right: 10%;
   }
   li {
-    padding-right: 120px;
     .choose_icon,
     .pay_icon,
     .reach_icon {
@@ -236,35 +236,49 @@ main {
 @media screen and (max-width: 1050px) {
   .Booking {
     flex-direction: column;
-    align-items: center;
+  }
+  .steps{
+    h2{
+      font-size: 40px;
+    }
+    width:80%;
   }
   
 }
-@media screen and (max-width: 550px) {
-  .Booking {
-    flex-direction: column;
-    align-items: center;
-  }
-  .steps {
-    width: 100%;
-  }
+@media screen and (max-width: 600px) {
   .trips {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     .trip1 {
-      width: 70%;
+      width: 100%;
     }
     .trip_image1 img {
-      width: 60%;
+      width:80%;
     }
     .trip2 {
       position: static;
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
+  .steps{
+    h2{
+      font-size: 30px;
+    }
+    h3,p{
+      font-size: 13px;
+    }
+    ul li{
+      padding-right:30px;
+    }
+  }
+
 }
-/* Booking section css */
+/*end of Booking section css */
 
 header {
   width: 100%;

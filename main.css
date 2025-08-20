@@ -5,8 +5,11 @@
   display: flex;
   flex-direction: column;
   gap: 65px;
+  overflow: hidden;
 }
-
+.section-header {
+  margin-bottom: 50px;
+}
 .section-header h2 {
   font-size: 18px;
   font-weight: 600;
@@ -16,6 +19,21 @@
   font-size: 40px;
   font-weight: 700;
   margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cat-flex-item {
+  position: relative;
+  text-align: center;
+  width: 18%;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .cat-flex-item-heading {
   font-size: 20px;
@@ -27,32 +45,6 @@
   font-size: 16px;
   font-weight: 500;
   color: #1e1d4c;
-}
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.g-15 {
-  gap: 15px;
-}
-.g-30 {
-  gap: 40px;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.section-header {
-  margin-bottom: 50px;
-}
-.cat-flex-item {
-  position: relative;
-  text-align: center;
-  width: 18%;
-  background-color: white;
-  padding-top: 20px;
-  padding-bottom: 40px;
 }
 .cat-img-item {
   height: 100px;
@@ -113,6 +105,7 @@
   right: 5%;
   top: 5%;
 }
+/* ---------------------------Selling----------------------------------- */
 .sell-flex-item {
   position: relative;
   text-align: center;
@@ -142,11 +135,7 @@
   font-weight: 400;
   color: #5e6282;
 }
-.c1 {
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 20px;
-}
+
 .icon {
   display: flex;
   align-items: start;
@@ -160,13 +149,20 @@ i {
   font-size: 16px;
   color: #5e6282;
   line-height: 20px;
+  margin-bottom: 20px;
 }
-
 .special-img {
   position: absolute;
   top: 25%;
   right: -18%;
   z-index: -1;
+}
+
+.g-30 {
+  gap: 40px;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .pos-rel {
   position: relative;
@@ -196,11 +192,11 @@ i {
 
 @font-face {
   font-family: "poppins"; /*a name to be used later*/
-  src: url("fonts/Poppins-Regular.ttf"); /*URL to font*/
+  src: url("../fonts/Poppins-Regular.ttf"); /*URL to font*/
 }
 @font-face {
   font-family: "volkhov"; /*a name to be used later*/
-  src: url("fonts/Volkhov-Regular.ttf"); /*URL to font*/
+  src: url("../fonts/Volkhov-Regular.ttf"); /*URL to font*/
 }
 
 @media (max-width: 930px) {
@@ -212,7 +208,7 @@ i {
     left: -9%;
   }
   .sell-flex-item {
-    width: 45%;
+    width: 40%;
   }
 
   .special-img {
@@ -229,7 +225,7 @@ i {
     width: 90%;
   }
   .sell-flex-item {
-    width: 100%;
+    width: 90%;
   }
   .special-img {
     right: -12%;

@@ -136,8 +136,8 @@ main {
     .reach_icon {
       margin-top: 20px;
       border-radius: 8px;
-      width: 70px;
-      height: 48px;
+      min-width: 50px;
+      max-height: 48px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -281,7 +281,6 @@ main {
       margin-right: 0;
     }
   }
-
 }
 /*end of Booking section css */
 
@@ -330,8 +329,8 @@ nav ul li a:hover {
 }
 
 #btnModes{
-  width:70px;
-  height:30px;
+  min-width:50px;
+  min-height:30px;
   margin-left:10%;
   display: flex;
   position: relative;

@@ -268,7 +268,7 @@ main {
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media  (max-width: 1050px) {
   .Booking {
     flex-direction: column;
   }
@@ -279,7 +279,7 @@ main {
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
+@media  (max-width: 600px) {
   .trips {
     width: 100%;
     display: flex;

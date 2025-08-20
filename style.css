@@ -3,6 +3,7 @@
   margin: 0;
   font-family: sans-serif;
 }
+
 main {
   margin: auto;
   width: 80%;
@@ -127,7 +128,7 @@ main {
   }
   p {
     color: #5e6282;
-    padding-right: 10%;
+    margin-right: 10%;
   }
   li {
     .choose_icon,
@@ -241,7 +242,7 @@ main {
     h2{
       font-size: 40px;
     }
-    width:80%;
+    width:100%;
   }
   
 }
@@ -266,6 +267,7 @@ main {
     }
   }
   .steps{
+
     h2{
       font-size: 30px;
     }
@@ -274,6 +276,9 @@ main {
     }
     ul li{
       padding-right:30px;
+    }
+    p{
+      margin-right: 0;
     }
   }
 
@@ -322,6 +327,22 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+#btnModes{
+  width:70px;
+  height:30px;
+  margin-left:10%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  div{
+      position:absolute;
+      font-size: 20px;
+  }
+  
+  background-color: lightgreen;  
+  border-radius: 30px;
 }
 
 .auth-buttons a {

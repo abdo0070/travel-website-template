@@ -7,6 +7,9 @@
   gap: 65px;
   overflow: hidden;
 }
+.category-section {
+  position: relative;
+}
 .section-header {
   margin-bottom: 50px;
 }
@@ -106,6 +109,9 @@
   top: 5%;
 }
 /* ---------------------------Selling----------------------------------- */
+.topselling-section {
+  margin-bottom: 40px;
+}
 .sell-flex-item {
   position: relative;
   text-align: center;
@@ -215,8 +221,8 @@ i {
     right: -15%;
   }
   .cat-special-img {
-    width: 90px;
-    right: 12%;
+    width: 80px;
+    right: 0;
     top: 5%;
   }
 }
@@ -231,8 +237,8 @@ i {
     right: -12%;
   }
   .cat-special-img {
-    width: 50px;
+    width: 30px;
     right: 25%;
-    top: 20%;
+    top: 8%;
   }
 }

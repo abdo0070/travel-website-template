@@ -12,7 +12,7 @@ main {
   position: relative;
   width: 100%;
   display: flex;
-  flex-wrap: wrap; /* allow content to wrap on small screens */
+  flex-wrap: wrap; 
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -20,9 +20,9 @@ main {
 }
 
 .hero .image {
-  width: 600px;
-  height: auto; /* allow image to scale */
-  max-width: 100%; /* responsive width */
+  width: 400px;
+  height: auto; 
+  max-width: 100%; 
 }
 .hero .image img {
   width: 100%;
@@ -65,7 +65,7 @@ main {
   flex-direction: row;
   margin: 20px 0;
   gap: 20px;
-  flex-wrap: wrap; /* wrap buttons on small screens */
+  flex-wrap: wrap; 
 }
 .hero .content .btn button {
   padding: 12px 8px;
@@ -112,6 +112,11 @@ main {
   }
   .hero .content h2 {
     font-size: 32px;
+  }
+  .hero .image {
+    width: 300px;
+    height: auto; 
+    max-width: 100%; 
   }
   .hero .content h2 {
     font-size: 20px;
@@ -536,6 +541,7 @@ footer {
 }
 
 /* CONTACT SLIDER */
+/****/
 .contain {
   display: flex;
   flex-direction: column;
@@ -547,16 +553,23 @@ footer {
 
 .icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 25px;
   flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .icons img {
-  width: 75px;
-  height: 40px;
+  width: 120px;
+  height: auto;
   object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.05);
 }
 
 .box {
@@ -564,35 +577,37 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(241, 224, 255, 0.429);
-  border-radius: 20px 5px 5px 5px;
-  padding: 40px;
-  width: 70%;
-  max-width: 600px;
+  background: linear-gradient(135deg, #dcc3ff86, #f5c1ff89);
+  border-radius: 50px 15px 15px 15px;
+  padding: 100px 60px;
+  width: 90%;
+  max-width: 834px;
   text-align: center;
-  box-shadow: 2px 2px 2px 2px rgba(98, 81, 112, 0.278);
-  margin: auto;
-  overflow: visible;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
 }
+
 
 .corner-logo {
   position: absolute;
-  top: -6px;
-  right: -9px;
-  width: 27px;
-  height: 24px;
+  top: -12px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
 }
 
 .sub-text {
-  font-family: "Lexend", sans-serif;
-  margin-bottom: 20px;
-  max-width: 400px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #333;
 }
 
 .form {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -600,77 +615,153 @@ footer {
 .email-field {
   border: none;
   flex: 1;
-  min-width: 200px;
-  padding: 10px 10px 10px 35px;
+  min-width: 250px;
+  padding: 12px 15px 12px 40px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 14px;
-  background-image: url(../Images/email-logo.png);
-  background-position: 10px center;
-  background-size: 16px 16px;
+  background-image: url(email-logo.png);
+  background-position: 12px center;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+.name-field {
+  border: none;
+  flex: 1;
+  min-width: 250px;
+  padding: 12px 15px 12px 40px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  background-image: url(username.png);
+  background-position: 12px center;
+  background-size: 18px 18px;
   background-repeat: no-repeat;
   outline: none;
   transition: box-shadow 0.3s;
 }
 
 .email-field:focus {
-  box-shadow: 1px 1px 4px 1px rgb(255, 170, 44);
+  box-shadow: 0px 0px 8px rgba(248, 135, 78, 0.6);
 }
 
 .email-field::placeholder {
-  font-size: 12px;
+  font-size: 13px;
+  color: #888;
+}
+.name-field:focus {
+  box-shadow: 0px 0px 8px rgba(255, 135, 75, 0.722);
+}
+
+.name-field::placeholder {
+  font-size: 13px;
+  color: #888;
 }
 
 .sub-button {
-  padding: 10px 15px;
+  padding: 12px 20px;
   border: none;
-  background: rgb(248, 135, 78);
-  border-radius: 5px;
+  background: linear-gradient(90deg, #f8834a, #f8693a);
+  border-radius: 8px;
   color: white;
-  box-shadow: 0px 1px 0px 0px black;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
-  white-space: nowrap;
+  font-size: 15px;
 }
 
 .sub-button:hover {
-  background: rgb(230, 100, 50);
+  background: linear-gradient(90deg, #f8693a, #f84720);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
   .box {
-    width: 95%;
-    padding: 20px;
+    padding: 80px 50px;
+    max-width: 700px;
   }
 
-  .box::before {
-    width: 80px;
-    height: 80px;
-    left: -50px;
+  .icons img {
+    width: 110px;
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+    padding: 70px 40px;
+    max-width: 600px;
   }
 
-  .sub-text {
-    font-size: 14px;
+  .icons img {
+    width: 100px;
   }
 
-  .sub-button {
-    width: 100%;
-    font-size: 13px;
+  .corner-logo {
+    width: 36px;
+    height: 36px;
   }
 }
 
 @media (max-width: 768px) {
   .box {
-    width: 90%;
+    padding: 60px 30px;
+    width: 95%;
+    max-width: 500px;
   }
 
-  .sub-text {
-    font-size: 15px;
+  .icons img {
+    width: 85px;
+  }
+
+  .corner-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .sub-button {
+    width: 100%;
   }
 }
 
-/****/
+@media (max-width: 576px) {
+  .box {
+    padding: 40px 20px;
+    border-radius: 30px 12px 12px 12px;
+  }
+
+  .icons img {
+    width: 75px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .email-field,
+  .name-field {
+    flex: unset;
+    min-width: unset;
+    width: 100%;
+    font-size: 13px;
+    padding: 10px 12px 10px 36px;
+  }
+
+  .sub-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .corner-logo {
+    top: -8px;
+    right: -8px;
+    width: 28px;
+    height: 28px;
+  }
+}
   /* TESTIMONALS */
 
 .testimonial {
